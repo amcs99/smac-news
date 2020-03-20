@@ -1,0 +1,50 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="tintuc">
+            <h2><span jhiTranslate="smacnewsApp.tintuc.detail.title">Tintuc</span> {{ tintuc.id }}</h2>
+
+            <hr>
+
+            <jhi-alert-error></jhi-alert-error>
+
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="smacnewsApp.tintuc.tieuDe">Tieu De</span></dt>
+                <dd>
+                    <span>{{ tintuc.tieuDe }}</span>
+                </dd>
+                <dt><span jhiTranslate="smacnewsApp.tintuc.imageThumbnail">Image Thumbnail</span></dt>
+                <dd>
+                    <span>{{ tintuc.imageThumbnail }}</span>
+                </dd>
+                <dt><span jhiTranslate="smacnewsApp.tintuc.thoiGianDang">Thoi Gian Dang</span></dt>
+                <dd>
+                    <span>{{ tintuc.thoiGianDang }}</span>
+                </dd>
+                <dt><span jhiTranslate="smacnewsApp.tintuc.noiDungTomTat">Noi Dung Tom Tat</span></dt>
+                <dd>
+                    <span>{{ tintuc.noiDungTomTat }}</span>
+                </dd>
+                <dt><span jhiTranslate="smacnewsApp.tintuc.noiDungDayDu">Noi Dung Day Du</span></dt>
+                <dd>
+                    <span>{{ tintuc.noiDungDayDu }}</span>
+                </dd>
+                <dt><span jhiTranslate="smacnewsApp.tintuc.tacGia">Tac Gia</span></dt>
+                <dd>
+                    <span>{{ tintuc.tacGia }}</span>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/tintuc', tintuc.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,27 @@
+{
+  "smacnewsApp": {
+    "tintuc": {
+      "home": {
+        "title": "Tintucs",
+        "createLabel": "Create a new Tintuc",
+        "createOrEditLabel": "Create or edit a Tintuc",
+        "notFound": "No Tintucs found"
+      },
+      "created": "A new Tintuc is created with identifier {{ param }}",
+      "updated": "A Tintuc is updated with identifier {{ param }}",
+      "deleted": "A Tintuc is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Tintuc {{ id }}?"
+      },
+      "detail": {
+        "title": "Tintuc"
+      },
+      "tieuDe": "Tieu De",
+      "imageThumbnail": "Image Thumbnail",
+      "thoiGianDang": "Thoi Gian Dang",
+      "noiDungTomTat": "Noi Dung Tom Tat",
+      "noiDungDayDu": "Noi Dung Day Du",
+      "tacGia": "Tac Gia"
+    }
+  }
+}

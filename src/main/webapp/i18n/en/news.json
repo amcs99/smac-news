@@ -1,0 +1,27 @@
+{
+  "smacnewsApp": {
+    "news": {
+      "home": {
+        "title": "News",
+        "createLabel": "Create a new News",
+        "createOrEditLabel": "Create or edit a News",
+        "notFound": "No News found"
+      },
+      "created": "A new News is created with identifier {{ param }}",
+      "updated": "A News is updated with identifier {{ param }}",
+      "deleted": "A News is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete News {{ id }}?"
+      },
+      "detail": {
+        "title": "News"
+      },
+      "tieuDe": "Tieu De",
+      "imageThumbnail": "Image Thumbnail",
+      "thoiGianDang": "Thoi Gian Dang",
+      "noiDungTomTat": "Noi Dung Tom Tat",
+      "noiDungDayDu": "Noi Dung Day Du",
+      "tacGia": "Tac Gia"
+    }
+  }
+}

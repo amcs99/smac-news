@@ -1,0 +1,25 @@
+<ngx-spinner></ngx-spinner>
+<div *ngIf="tintuc" class="blog-area section-padding-0-80">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-12">
+                <div class="blog-posts-area">
+                    <div class="single-blog-post featured-post single-post">
+                        <div class="post-data">
+                            <a href="#" class="post-catagory">Tin Tức</a>
+                            <a href="#" class="post-title">
+                                <h6>{{tintuc.tieuDe}}</h6>
+                            </a>
+                            <div class="post-meta">
+                                <p class="post-author">Tác giả: <a href="#">{{tintuc.tacGia}}</a></p>
+                                <div class="row" [innerHTML]="tintuc.noiDungDayDu"></div>
+                                <div class="newspaper-post-like d-flex align-items-center justify-content-between">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

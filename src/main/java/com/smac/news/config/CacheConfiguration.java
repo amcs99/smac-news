@@ -45,6 +45,8 @@ public class CacheConfiguration {
             createCache(cm, com.smac.news.domain.User.class.getName());
             createCache(cm, com.smac.news.domain.Authority.class.getName());
             createCache(cm, com.smac.news.domain.User.class.getName() + ".authorities");
+            createCache(cm, com.smac.news.domain.News.class.getName());
+            createCache(cm, com.smac.news.domain.Tintuc.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }

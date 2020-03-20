@@ -14,6 +14,12 @@ import { FooterComponent } from './layouts/footer/footer.component';
 import { PageRibbonComponent } from './layouts/profiles/page-ribbon.component';
 import { ActiveMenuDirective } from './layouts/navbar/active-menu.directive';
 import { ErrorComponent } from './layouts/error/error.component';
+import { DocBaoComponent } from './doc-bao/doc-bao.component';
+import { HeaderComponent } from './header/header.component';
+import { NgxSpinnerModule } from 'ngx-spinner';
+import { NgxPaginationModule } from 'ngx-pagination';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ChiTietBaiBaoComponent } from './chi-tiet-bai-bao/chi-tiet-bai-bao.component';
 
 @NgModule({
   imports: [
@@ -23,9 +29,22 @@ import { ErrorComponent } from './layouts/error/error.component';
     SmacnewsHomeModule,
     // jhipster-needle-angular-add-module JHipster will add new module here
     SmacnewsEntityModule,
-    SmacnewsAppRoutingModule
+    SmacnewsAppRoutingModule,
+    NgxSpinnerModule,
+    BrowserAnimationsModule,
+    NgxPaginationModule
   ],
-  declarations: [MainComponent, NavbarComponent, ErrorComponent, PageRibbonComponent, ActiveMenuDirective, FooterComponent],
+  declarations: [
+    MainComponent,
+    NavbarComponent,
+    ErrorComponent,
+    PageRibbonComponent,
+    ActiveMenuDirective,
+    FooterComponent,
+    DocBaoComponent,
+    HeaderComponent,
+    ChiTietBaiBaoComponent
+  ],
   bootstrap: [MainComponent]
 })
 export class SmacnewsAppModule {}

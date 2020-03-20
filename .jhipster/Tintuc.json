@@ -1,0 +1,45 @@
+{
+    "name": "Tintuc",
+    "fields": [
+        {
+            "fieldName": "tieuDe",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "imageThumbnail",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "thoiGianDang",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "noiDungTomTat",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "maxlength"
+            ],
+            "fieldValidateRulesMaxlength": "1000"
+        },
+        {
+            "fieldName": "noiDungDayDu",
+            "fieldType": "byte[]",
+            "fieldTypeBlobContent": "text"
+        },
+        {
+            "fieldName": "tacGia",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [],
+    "changelogDate": "20200318093200",
+    "entityTableName": "tintuc",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

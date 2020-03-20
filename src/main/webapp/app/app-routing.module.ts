@@ -5,6 +5,8 @@ import { navbarRoute } from './layouts/navbar/navbar.route';
 import { DEBUG_INFO_ENABLED } from 'app/app.constants';
 
 import { UserRouteAccessService } from 'app/core/auth/user-route-access-service';
+import { DocBaoComponent } from './doc-bao/doc-bao.component';
+import { ChiTietBaiBaoComponent } from './chi-tiet-bai-bao/chi-tiet-bai-bao.component';
 
 const LAYOUT_ROUTES = [navbarRoute, ...errorRoute];
 
@@ -12,6 +14,11 @@ const LAYOUT_ROUTES = [navbarRoute, ...errorRoute];
   imports: [
     RouterModule.forRoot(
       [
+        {
+          path: 'docbao',
+          component: DocBaoComponent
+        },
+        { path: 'chi-tiet-bai-bao/:id', component: ChiTietBaiBaoComponent },
         {
           path: 'admin',
           data: {
